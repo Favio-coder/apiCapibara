@@ -1,0 +1,21 @@
+# 🧩 Entorno virtual
+venv/
+env/
+.venv/
+
+# ⚙️ Archivos de entorno
+.env
+
+# 🐍 Archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📦 Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# 📁 Archivos de sistema (Windows / macOS)
+.DS_Store
+Thumbs.db

@@ -1,9 +1,11 @@
 import numpy as np
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
+import os
 
 # Cargar modelo
-model = load_model(r"app\models\modelo_clasificacion.keras")
+model_path = os.path.join("app", "models", "modelo_clasificacion.keras")
+model = load_model(model_path)
 
 # Etiquetas conocidas
 le = LabelEncoder()

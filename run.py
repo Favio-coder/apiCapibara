@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routes.chatbot_routes import router as assistant_router 
 # Importar el router de usuarios (asumimos que existe)
 from app.routes.user_routes import router as user_router 
-
+from app.routes.prediction_routes import router as prediction_router
 
 app = FastAPI(
     title="WAOS API",
@@ -39,3 +39,6 @@ app.include_router(assistant_router)
 @app.get("/")
 def root():
     return {"message": "WAOS API funcionando piola."}
+
+
+app.include_router(prediction_router, prefix="/weather")  # /weather/predict

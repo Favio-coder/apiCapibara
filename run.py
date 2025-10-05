@@ -38,7 +38,7 @@ app.include_router(assistant_router)
 # --- Ruta Root (si la tenías) ---
 @app.get("/")
 def root():
-    return {"message": "WAOS API funcionando piola."}
+    return {"message": "BOT on"}
 
 
 app.include_router(prediction_router, prefix="/weather")  # /weather/predict

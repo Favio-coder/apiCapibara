@@ -3,7 +3,7 @@ from tensorflow.keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 
 # Cargar modelo
-model = load_model("app\models\modelo_clasificacion.keras")
+model = load_model(r"app\models\modelo_clasificacion.keras")
 
 # Etiquetas conocidas
 le = LabelEncoder()
